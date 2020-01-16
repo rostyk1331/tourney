@@ -1,11 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .logo {
+    margin-top: 5px;
     height: 80px;
 }
 .header {
-    background: linear-gradient(to bottom, #0171A4 0%,#0171A4 70%,#0171A4 70%, #1B315F 70%, #1B315F 100%);
+    background: linear-gradient(to bottom, #1C315F 0%,#1C315F 20%,#1C315F 40%, #E9EFFB 40%, #E9EFFB 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,10 +17,11 @@ body {
 h2 {
     margin-bottom: 0;
     font-weight: bold;
+    color: #242527;
 }
 input {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #929292;
     outline-width: 0;
     font-size: 16px;
     width: 20rem;
@@ -39,8 +41,8 @@ button {
     margin: 30px;
 }
 .signIn {
-    border-radius: 15px;
-    background-color: #1B315F;
+    border-radius: 10px;
+    background-color: #1C315F;
     color: white;
     font-weight: bold;
     border: none;
@@ -52,6 +54,7 @@ button {
 .signIn:focus,
 .signIn:hover {
   box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
+  background-color: #14264d;
 }
 .google-button {
     height: 40px;
@@ -60,13 +63,12 @@ button {
     color: #737373;
     border-radius: 5px;
     white-space: nowrap;
-    box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.05);
+    box-shadow: 1px 2px 0px 1px rgba(0,0,0,0.05);
     transition-duration: 150ms;
     transition-timing-function: ease-in-out;
     padding: 0;
     cursor: pointer;
-    outline-width: 0;
-  }
+}
 .google-button:focus,
 .google-button:hover {
   box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
@@ -94,7 +96,7 @@ button {
   display: inline-block;
   vertical-align: middle;
   padding: 0 24px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-family: 'Roboto',arial,sans-serif;
 }

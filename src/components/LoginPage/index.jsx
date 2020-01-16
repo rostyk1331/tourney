@@ -41,10 +41,10 @@ class LoginPage extends React.Component {
                         <span class="google-button__text">Sign in with Google</span>
                     </button>
                     <p>OR</p>
-                    <label>Email Adddress*</label>
+                    <label>Email Adddress</label>
                     <input type='text' value={email} onChange={this.onEmailChange}/>
-                    <label>Password*</label>
-                    <input type='text'value={password} onChange={this.onPasswordChange}/>
+                    <label>Password</label>
+                    <input type='password'value={password} onChange={this.onPasswordChange}/>
                     <button type="button" onClick={this.onSignIn} className="signIn">Sign In</button>
                 </form>
             </div>
