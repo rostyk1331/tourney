@@ -1,0 +1,8 @@
+{
+    "cognito": {
+        "REGION": "us-west-2",
+        "USER_POOL_ID": "us-west-2_flcFggid",
+        "APP_CLIENT_ID": "159ufjrihgehb67sh342hej9",
+        "DOMAIN": "auth.demo.auth.us-east-2.amazoncognito.com"
+    }
+}
