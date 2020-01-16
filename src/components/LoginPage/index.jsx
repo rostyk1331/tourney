@@ -30,7 +30,7 @@ class LoginPage extends React.Component {
         return (
             <div className='container'>
                 <header className="header">
-                    <img src={logo} className="logo"/>
+                    <img src={logo} className="logo" alt="logo"/>
                     <h2>Register for Tourney Master</h2>
                 </header>
                 <form className='form'>
