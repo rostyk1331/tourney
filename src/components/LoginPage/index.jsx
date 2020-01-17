@@ -17,7 +17,7 @@ class LoginPage extends React.Component {
         const { email, password } = this.state;
         const user = await Auth.signIn(email, password);
         console.log(user);
-        if (user.Session) {
+        if (user.signInUserSession.idToken.jwtToken) {
             window.location.href = '/page'
         }
     }
