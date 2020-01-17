@@ -5,7 +5,6 @@ import './style.css';
 
 class LoginPage extends React.Component {
     state = { email: '', password: '' };
-
     onEmailChange = (e) => {
         this.setState({email: e.target.value});
     }
@@ -18,6 +17,9 @@ class LoginPage extends React.Component {
         const { email, password } = this.state;
         const user = await Auth.signIn(email, password);
         console.log(user);
+        if (user.Session) {
+            window.location.href = '/page'
+        }
     }
 
     onGoogleSignIn = async () => {
