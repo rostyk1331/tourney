@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import logo from '../LoginPage/logo.png';
 import avatar from '../Header/avatar.png';
@@ -7,7 +8,7 @@ class Header extends React.Component {
     render() {
         return (
             <ul className={styles['navbar']}>
-                <li><img src={logo} className={styles["logo-header"]}/></li>
+                <li><img src={logo} className={styles["logo-header"]} alt='logo'/></li>
                 <div className={styles["menu-container"]}>
                     <li><a href="#">Event Production</a></li>
                     <li><a href="#">Event Search</a></li>
@@ -15,7 +16,7 @@ class Header extends React.Component {
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </div>
-                <li><img src={avatar} className={styles["avatar"]}/></li>
+                <li><img src={avatar} className={styles["avatar"]} alt='avatar'/></li>
             </ul>
         )
     }
