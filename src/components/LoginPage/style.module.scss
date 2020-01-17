@@ -47,21 +47,21 @@ button {
     color: white;
     font-weight: bold;
     border: none;
-    padding: 6px 16px;
+    padding: 8px 20px;
     outline-width: 0;
     cursor: pointer;
     box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
-}
-.signIn:focus,
-.signIn:hover {
-    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
-}
-.signIn:hover {
-    background-color: #14264d;
-}
-.signIn:active {
-    box-shadow: inset 0 -1px 0 rgba(0,0,0, .07), 
-                inset 0 -8em 0 rgba(0,0,0, .15);
+    &:focus {
+        box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);    
+    }
+    &:hover {
+        background-color: #14264d;
+        box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
+    }
+    &:active {
+        box-shadow: inset 0 -1px 0 rgba(0,0,0, .07), 
+                    inset 0 -8em 0 rgba(0,0,0, .15);
+    }
 }
 .google-button {
     height: 40px;
@@ -76,16 +76,17 @@ button {
     padding: 0;
     cursor: pointer;
     outline-width: 0;
-}
-.google-button:focus,
-.google-button:hover {
-    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
-}
-  
-.google-button:active {
-    background-color: #e5e5e5;
-    box-shadow: none;
-    transition-duration: 10ms;
+    &:focus {
+        box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
+    }
+    &:hover {
+        box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
+    }
+    &:active {
+        background-color: #e5e5e5;
+        box-shadow: none;
+        transition-duration: 10ms;    
+    }
 }
 .google-button__icon {
     display: inline-block;
