@@ -4,6 +4,7 @@ import './index.css';
 import App from './components/App';
 import Amplify from 'aws-amplify';
 import config from './config';
+import '@fortawesome/fontawesome-free';
 
 Amplify.configure({
     Auth: {

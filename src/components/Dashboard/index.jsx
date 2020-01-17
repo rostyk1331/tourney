@@ -1,5 +1,10 @@
 import React from 'react';
 import classnames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faBell, faEnvelope, faStickyNote, faCog, faCheckCircle, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
+import logo1 from '../../sources/1.png';
+import logo2 from '../../sources/2.png';
 
 import styles from './styles.module.scss';
 
@@ -15,11 +20,26 @@ class Dashboard extends React.Component {
                 </div>
                 <div className={styles['container']}>
                     <div className={styles['menu']}>
-                        <div className={styles['item']}>My Dashboard</div>
-                        <div className={styles['item']}>Library Manager</div>
-                        <div className={styles['item']}>Messages</div>
-                        <div className={styles['item']}>Notes</div>
-                        <div className={styles['item']}>Settings</div>
+                        <div className={styles['item']}>
+                            <FontAwesomeIcon className={styles['icon']} icon={faUser}/>
+                            <b>My Dashboard</b>
+                        </div>
+                        <div className={styles['item']}>
+                            <FontAwesomeIcon className={styles['icon']} icon={faStickyNote}/>
+                            Library Manager
+                        </div>
+                        <div className={styles['item']}>
+                            <FontAwesomeIcon className={styles['icon']} icon={faEnvelope}/>
+                            Messages
+                        </div>
+                        <div className={styles['item']}>
+                            <FontAwesomeIcon className={styles['icon']} icon={faStickyNote}/>
+                            Notes
+                        </div>
+                        <div className={styles['item']}>
+                            <FontAwesomeIcon className={styles['icon']} icon={faCog}/>
+                            Settings
+                        </div>
                     </div>
                     <div className={styles['main']}>
                         <div className={styles['title']}>
@@ -30,69 +50,75 @@ class Dashboard extends React.Component {
                                 <div className={styles['card-title']}>Alerts</div>
                                 <div className={styles['alert']}>
                                     <div className={styles['alert-logo']}>
-                                        Logo
+                                        <FontAwesomeIcon icon={faBell}/>
                                     </div>
                                     <div className={styles['alert-message']}>
                                         <div>1 Team has requested feedback</div>
-                                        <div>01/14/20</div>
+                                        <div className={styles['additionl-message']}>01/14/20</div>
                                     </div>
                                 </div>
                                 <div className={styles['alert']}>
                                     <div className={styles['alert-logo']}>
-                                        Logo
+                                        <FontAwesomeIcon icon={faBell}/>
                                     </div>
                                     <div className={styles['alert-message']}>
-                                        <div>1 Team has registered for Field Hockey I</div>
-                                        <div>01/14/20</div>
+                                        <div>1 Team has registered for <span className={styles['link']}>Field Hockey I</span></div>
+                                        <div className={styles['additionl-message']}>01/14/20</div>
                                     </div>
                                 </div>
                                 <div className={styles['alert']}>
                                     <div className={styles['alert-logo']}>
-                                        Logo
+                                        <FontAwesomeIcon icon={faBell}/>
                                     </div>
                                     <div className={styles['alert-message']}>
                                         <div>5 Teams request feedback</div>
-                                        <div>01/14/20</div>
+                                        <div className={styles['additionl-message']}>01/14/20</div>
                                     </div>
                                 </div>
                                 <div className={styles['alert']}>
                                     <div className={styles['alert-logo']}>
-                                        Logo
+                                        <FontAwesomeIcon icon={faBell}/>
                                     </div>
                                     <div className={styles['alert-message']}>
-                                        <div>2 Teams have registered for Field Hockey I</div>
-                                        <div>01/14/20</div>
+                                        <div>2 Teams have registered for <span className={styles['link']}>Field Hockey I</span></div>
+                                        <div className={styles['additionl-message']}>01/14/20</div>
                                     </div>
+                                </div>
+                                <div className={styles['expand']}>
+                                    <FontAwesomeIcon icon={faChevronDown}/>
                                 </div>
                             </div>
                             <div className={classnames(styles['paper'], styles['todos'])}>
                                 <div className={styles['card-title']}>To Do</div>
                                 <div className={styles['todo']}>
-                                    <div className={styles['todo-logo']}>
-                                        Logo
+                                    <div className={styles['todo-logo']} style={{ color: '#8B8B8C'}}>
+                                        <FontAwesomeIcon icon={faCheckCircle}/>
                                     </div>
                                     <div className={styles['todo-message']}>
-                                        <div>Resolve TRUE Florida scheduling conflict</div>
-                                        <div>Due by 02/01/20</div>
+                                        <div>Resolve TRUE Florida <span className={styles['link']}>scheduling</span> conflict</div>
+                                        <div className={styles['additionl-message']}>Due by 02/01/20</div>
+                                    </div>
+                                </div>
+                                <div className={styles['todo']}>
+                                    <div className={styles['todo-logo']} style={{ color: '#8B8B8C'}}>
+                                        <FontAwesomeIcon icon={faCheckCircle}/>
+                                    </div>
+                                    <div className={styles['todo-message']}>
+                                        <div>Finalize <span className={styles['link']}>Men's Spring Thaw</span> Registration</div>
+                                        <div className={styles['additionl-message']}>Due by 02/01/20</div>
                                     </div>
                                 </div>
                                 <div className={styles['todo']}>
                                     <div className={styles['todo-logo']}>
-                                        Logo
+                                        <FontAwesomeIcon icon={faCheckCircle}/>
                                     </div>
                                     <div className={styles['todo-message']}>
-                                        <div>Finalize Men's Spring Thaw Registration</div>
-                                        <div>Due by 02/01/20</div>
+                                        <div>Resolve Trilogy <span className={styles['link']}>scheduling</span> conflict</div>
+                                        <div className={styles['additionl-message']}>Completed 01/02/20</div>
                                     </div>
                                 </div>
-                                <div className={styles['todo']}>
-                                    <div className={styles['todo-logo']}>
-                                        Logo
-                                    </div>
-                                    <div className={styles['todo-message']}>
-                                        <div>Resolve Trilogy scheduling conflict</div>
-                                        <div>Completed 01/02/20</div>
-                                    </div>
+                                <div className={styles['expand']}>
+                                    <FontAwesomeIcon icon={faChevronDown}/>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +130,9 @@ class Dashboard extends React.Component {
                         <div className={styles['tournaments-wrapper']}>
                             <div className={classnames(styles['paper'], styles['tournament'])}>
                                 <div className={styles['tournament-info']}>
-                                    <div className={styles['tournament-logo']}>Logo</div>
+                                    <div className={styles['tournament-logo']}>
+                                        <img src={logo1} alt={'sport logo'}/>
+                                    </div>
                                     <div className={styles['tournament-title']}>
                                         <div className={styles['card-title']}>Field Hockey I</div>
                                         <div>01/01/2020 - 04/01/2020</div>
@@ -137,6 +165,7 @@ class Dashboard extends React.Component {
                                         <div className={styles['info']}>
                                             <span className={styles['column-title']}>Status:</span>
                                             Live
+                                            <div className={styles['status-circle']}></div>
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +176,9 @@ class Dashboard extends React.Component {
                             </div>
                             <div className={classnames(styles['paper'], styles['tournament'])}>
                                 <div className={styles['tournament-info']}>
-                                    <div className={styles['tournament-logo']}>Logo</div>
+                                    <div className={styles['tournament-logo']}>
+                                        <img src={logo2} alt={'sport logo'}/>
+                                    </div>
                                     <div className={styles['tournament-title']}>
                                         <div className={styles['card-title']}>Field Hockey I</div>
                                         <div>01/01/2020 - 04/01/2020</div>
@@ -180,6 +211,7 @@ class Dashboard extends React.Component {
                                         <div className={styles['info']}>
                                             <span className={styles['column-title']}>Status:</span>
                                             Draft
+                                            <div className={styles['status-circle']} style={{ backgroundColor: '#FFCB00'}}></div>
                                         </div>
                                     </div>
                                 </div>

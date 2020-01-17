@@ -15,14 +15,14 @@ class LoginPage extends React.Component {
     }
 
     onSignIn = async () => {
-        // const { email, password } = this.state;
-        // const user = await Auth.signIn(email, password);
-        // console.log(user);
+        const { email, password } = this.state;
+        const user = await Auth.signIn(email, password);
+        console.log(user);
     }
 
     onGoogleSignIn = async () => {
-        // const token = await Auth.federatedSignIn({ provider: "Google" });
-        // console.log(token);
+        const token = await Auth.federatedSignIn({ provider: "Google" });
+        console.log(token);
     }
 
     render() {
