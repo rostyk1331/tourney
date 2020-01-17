@@ -7,7 +7,7 @@ class Header extends React.Component {
     render() {
         return (
             <ul className="navbar">
-                <li><img src={logo} className="logo"/></li>
+                <li><img src={logo} className="logo-header"/></li>
                 <div className="menu-container">
                     <li><a href="#">Event Production</a></li>
                     <li><a href="#">Event Search</a></li>
