@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
 }
 .logo {
     margin-top: 5px;
@@ -26,6 +27,7 @@ input {
     font-size: 16px;
     width: 20rem;
     padding: 10px;
+    background-color: transparent;
 }
 .form {
     display: flex;
@@ -40,6 +42,7 @@ label {
 }
 button {
     margin: 30px;
+    font-size: 14px
 }
 .signIn {
     border-radius: 10px;
