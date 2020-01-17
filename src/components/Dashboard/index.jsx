@@ -131,7 +131,7 @@ class Dashboard extends React.Component {
                             <div className={classnames(styles['paper'], styles['tournament'])}>
                                 <div className={styles['tournament-info']}>
                                     <div className={styles['tournament-logo']}>
-                                        <img src={logo1} alt={'sport logo'}/>
+                                        <img src={logo2} alt={'sport logo'}/>
                                     </div>
                                     <div className={styles['tournament-title']}>
                                         <div className={styles['card-title']}>Field Hockey I</div>
@@ -177,7 +177,7 @@ class Dashboard extends React.Component {
                             <div className={classnames(styles['paper'], styles['tournament'])}>
                                 <div className={styles['tournament-info']}>
                                     <div className={styles['tournament-logo']}>
-                                        <img src={logo2} alt={'sport logo'}/>
+                                        <img src={logo1} alt={'sport logo'}/>
                                     </div>
                                     <div className={styles['tournament-title']}>
                                         <div className={styles['card-title']}>Field Hockey I</div>
