@@ -8,6 +8,8 @@ import {
 import Dashboard from './Dashboard';
 import LoginPage from './LoginPage';
 import Page from './Page';
+import Dnd from './Dnd';
+import Input from './Input';
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
         </Route>
         <Route path="/page">
           <Page />
+        </Route>
+        <Route path="/dnd">
+          <Dnd />
+        </Route>
+        <Route path="/input">
+          <Input />
         </Route>
         <Route path="/">
           <LoginPage />
