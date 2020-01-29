@@ -233,3 +233,106 @@
     top: 10.5px;
     right: 12.5px;
 }
+
+.primaryBtn {
+    padding: 8px 32px;
+    border-radius: 21px;
+    background-color: #1C315F;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+        &:hover {
+            background-color: #00A3EA;
+            transition: .4s;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+}
+.secondaryBtn {
+    padding: 8px 32px;
+	border-radius: 5px;
+    background-color: #1C315F;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+        &:hover {
+            background-color: #00A3EA;
+            transition: .4s;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+}
+.outlineBtn {
+    box-sizing: border-box;
+    padding: 8px 32px;
+    border: 1px solid #1C315F;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    color: #1C315F;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 22px;
+    outline: none;
+    cursor: pointer;
+        &:hover {
+            background-color: #00A3EA;
+            color: #FFFFFF;
+            transition: .4s;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+}
+.dangerBtn {
+    padding: 8px 32px;
+    border-radius: 21px;
+    background-color: #FF0F19;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    outline: none;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+        &:hover {
+            opacity: 1;
+            transition: .4s;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+}
+
+.linkBtn {
+    padding: 8px 32px;
+    background-color: transparent;
+    color: #00A3EA;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 22px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        color: #1C315F;
+        transition: .4s;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}

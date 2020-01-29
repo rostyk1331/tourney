@@ -60,6 +60,13 @@ class Input extends React.Component {
                 <div>
                     <input type="date" name="date" id="" className={styles.inputDate}/>
                 </div>
+                <div>
+                    <button type="button" className={styles.primaryBtn}>Primary</button>
+                    <button type="button" className={styles.linkBtn}>Link</button>
+                    <button type="button" className={styles.dangerBtn}>Danger</button>
+                    <button type="button" className={styles.secondaryBtn}>Secondary</button>
+                    <button type="button" className={styles.outlineBtn}>Outline</button>
+                </div>
             </div>
         )
     }
