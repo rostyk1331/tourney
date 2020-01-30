@@ -9,7 +9,7 @@ import Dashboard from './Dashboard';
 import LoginPage from './LoginPage';
 import Page from './Page';
 import Dnd from './Dnd';
-import Input from './Input';
+import Inputs from './Inputs';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Dnd />
         </Route>
         <Route path="/input">
-          <Input />
+          <Inputs />
         </Route>
         <Route path="/">
           <LoginPage />

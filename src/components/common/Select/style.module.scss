@@ -1,0 +1,34 @@
+.formLabel {
+    color: #6A6A6A;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.selectInputContainer {
+    position: relative;
+    .selectInput {
+        -webkit-appearance: none;
+        box-sizing: border-box;
+        height: 37px;
+        width: 100%;
+        border: 1px solid #CDCFD2;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        color: #6A6A6A;	font-family: "Open Sans";	font-size: 16px;	line-height: 22px;
+        padding-left: 12px;
+        outline-color:#00A3EA;
+    }
+        &:after {
+            content: "\f0d7";
+            border-left: 1px solid #CDCFD2;
+            padding: 10.75px 12.91px 10.25px 12.91px;
+            position: absolute;
+            font-family: 'FontAwesome';
+            color: #B3B3B3;
+            font-size: 16px;
+            line-height: 16px;
+            right: 0;
+            pointer-events:none;
+        }
+}

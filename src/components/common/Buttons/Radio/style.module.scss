@@ -1,0 +1,47 @@
+.formLabel {
+    color: #6A6A6A;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.inputRadio {
+    display: none;
+    +.inputRadioLabel {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        display: inline-block;
+        color: #6A6A6A;	font-family: "Open Sans";	font-size: 16px;	line-height: 22px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            height: 22px;
+            width: 22px;
+            border: 1px solid #6A6A6A;
+            border-radius: 10.5px;
+            background-color: #FFFFFF;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            height: 22px;
+            width: 22px;
+            border: 1px solid #6A6A6A;
+            border-radius: 10.5px;
+            background-color:#00A3EA;
+        }
+    }
+    &:not(:checked) + .inputRadioLabel:after {
+        opacity: 0;
+    }
+    &:checked + .inputRadioLabel:after {
+        opacity: 1;
+    }
+}

@@ -1,33 +1,29 @@
 import React from 'react';
 import styles from './style.module.scss';
+import Input from '../common/Input';
+import Textarea from '../common/Textarea';
+import Select from '../common/Select';
+import Radio from '../common/Buttons/Radio';
 
-class Input extends React.Component {
+const selectOptions = ['Male', 'Female'];
+const radioOptions = [
+    {name: 'bracketsType', id: 'single', label: 'Single Elimination'},
+    {name: 'bracketsType', id: 'double', label: 'Double Elimination'},
+    {name: 'bracketsType', id: 'threeGame', label: '3 Game Minimum'}
+];
+
+class Inputs extends React.Component {
     render() {
         return (
             <div style={{"padding": "10px"}}>
-                <label className={styles.formLabel}>Search</label>
-                <div className={styles.searchInputContainer}>
-                    <input type="text" name="search" className={styles.searchInput} placeholder="Search"/>
-                </div>
-                <label className={styles.formLabel}>Select</label>
-                <div className={styles.selectInputContainer}>
-                    <select className={styles.selectInput}>
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
-                </div>
-                <label className={styles.formLabel}>Input</label>
-                <div>
-                    <input type="text" name="input" className={styles.inputText}/>
-                </div>
-                <label className={styles.formLabel}>Input with info</label>
-                <div className={styles.inputTextInfoContainer}>
-                    <input type="text" name="input" className={styles.inputTextInfo}/>
-                </div>
-                <label className={styles.formLabel}>Textarea</label>
-                <div>
-                    <textarea name="" className={styles.inputTextarea} cols="30" rows="10"></textarea>
-                </div>
+                <Input label='Standart input' type='Text' placeholder='Text'/>
+                <Input label='Info input' type='TextInfo'/>
+                <Input label='Search' type='Search' placeholder='Search'/>
+                <Textarea placeholder='Message'/>
+                <Select options={selectOptions}/>
+                <Radio options={radioOptions}/>
+                <hr/>
+                
                 <label className={styles.formLabel}>Bracket Type</label>
                 <div>
                     <div>
@@ -72,4 +68,4 @@ class Input extends React.Component {
     }
 }
 
-export default Input; 
+export default Inputs; 

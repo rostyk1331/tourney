@@ -1,0 +1,74 @@
+.formLabel {
+    color: #6A6A6A;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.inputText {
+    box-sizing: border-box;	
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 7.5px 12.5px 7.5px 12.5px;
+    border: 1px solid #CDCFD2;
+    border-radius: 2px;
+    outline-color:#00A3EA;
+    color: #6A6A6A;	font-family: "Open Sans";	font-size: 16px;	line-height: 22px;
+}
+.inputTextInfoContainer {
+    position: relative;
+    .inputTextInfo {
+        box-sizing: border-box;	
+        height: 39px;
+        width: 100%;
+        border: 1px solid #CDCFD2;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        padding: 7.5px 90px 7.5px 12px;
+        outline-color:#00A3EA;
+        color: #6A6A6A;	font-family: "Open Sans";	font-size: 16px;	line-height: 22px;
+    }
+    &:after {
+        content: 'minutes';
+        position: absolute;
+        color: #8B8B8C;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 22px;
+        padding: 7.5px 12.5px 7.5px 0;
+        right: 0;
+    }
+}
+.inputSearchContainer {
+    position: relative;
+    .inputSearch {
+        box-sizing: border-box;
+        height: 39px;
+        width: 100%;
+        border: 1px solid #CDCFD2;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+        padding: 0 33px 0 12.5px;
+        outline-color:#00A3EA;
+        color: #6A6A6A;	font-family: "Open Sans";	font-size: 16px;	line-height: 22px;
+    }
+        &:after {
+            content: "\f002";
+            position: absolute;
+            font-family: 'FontAwesome';
+            color: #B3B3B3;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 11px 15px 11px 15px;
+            right: 0;
+        }
+        &::placeholder {
+            height: 19px;
+            width: 76px;
+            color: #6A6A6A;
+            font-family: "Open Sans";
+            font-size: 14px;
+            line-height: 19px;
+        }
+}
